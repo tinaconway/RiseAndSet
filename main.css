@@ -15,5 +15,49 @@ h1 {
 }
 
 .inputLocation {
-  font-size: 18px;  
+  font-size: 18px;
+}
+
+.home {
+  display: block;
+}
+
+.nav {
+  text-align: right;
+
+}
+.nav2 {
+  text-align: center;
+}
+
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+
+}
+
+li {
+display: inline-block;
+}
+button {
+  font-size: .9em;
+  margin-top: 10px;
+}
+
+.navLink:link, .navLink:visited {
+    display: block;
+    width: 120px;
+    font-weight: bold;
+    color: #FFFFFF;
+
+    text-align: center;
+    padding: 4px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.navLink:hover, .navLink:active {
+    background-color: #D97CE0;
 }
