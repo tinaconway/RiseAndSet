@@ -1,0 +1,9 @@
+
+<h1>Rise&Set</h1>
+<form class="locationForm">
+<h3>Enter your lattitude:</h3>
+<input type="text" name="latitude" id="lattitude" class="inputLocation" ng-model="geo.lat" size=40 required>
+<h3>Enter your longitude:</h3>
+<input type="text" name="longitude" id="longitude" class="inputLocation" ng-model="geo.long" size=40 requried><br>
+<button type="button" id="submitLocation" ng-click="getTimes(geo)">Submit</button>
+</form>

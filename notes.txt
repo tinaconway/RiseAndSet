@@ -1,0 +1,78 @@
+ANGULAR
+
+bower install --save angular angular-route
+bower init
+
+
+index.html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Angular</title>
+</head>
+<body ng-app="luca">
+
+  <div ng-controller="MainController">
+  <input type ="text" ng-model="helloWorld">
+  {{helloWorld}}
+
+  <button ng-click="alertMe()">AlertMe</button>
+  </div>
+
+  <ng-view>
+  </ng-view>
+
+  // <input type="text" ng-model="hello"><h1>{{hello}}</h1>
+  // <textarea ng-model="yoyo" name="" id="" cols="30" rows="10"></textarea>
+  // <h2>{{yoyo}}</h2>
+
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+  <script src="app.js"></script>
+  <script src="controller.js"></script>
+  <script src="service.js"></script>
+</body>
+</html>
+
+
+app.js - main app that sets up application
+(function () {
+  'use strict';
+  angular
+    .module('luca', [
+      'ngRoute'
+    ])
+    .config(function($routeProvidedr) {
+      $routeProvideder
+        .when('/', {
+          template: '<h1>Welcome Home</h1>',
+          controller: 'MainController'
+        })
+        .when('/bubbles', {
+
+          template: '<img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcResGIISEjXeI92yGCHFuuxXBTGlQ-0cT5S84oykTr0ldUeywggGaA01d0">'
+        })
+    });
+
+})();
+
+
+controller.js
+(function () {
+  'use strict';
+  angular
+    .module('luca', [])
+    .controller('MainController', function($scope) {
+      $scope.helloWorld = 'This is my hello world text';
+
+      $scope.alertMe = function() {
+        alert('hello everyone');
+      }
+    });
+
+})();
+
+new folder - views
+main.html
+bubbles.html

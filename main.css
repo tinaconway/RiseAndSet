@@ -1,0 +1,19 @@
+body {
+  background: url('http://hdwallpapersfit.com/wp-content/uploads/2015/03/nature-purple-sunset-wallpaper.jpg') no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  font-family: Lato;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-weight: 200;
+  font-size: 3.5em;
+}
+
+.inputLocation {
+  font-size: 18px;  
+}
